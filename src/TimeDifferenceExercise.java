@@ -22,11 +22,10 @@ public class TimeDifferenceExercise extends Exercise {
                 "seconds, and the other three defining the second one.");
         System.out.println("Please enter six integers: ");
 
-        String[] stringArray = new String [s.nextInt()];
-
-        s.nextLine();
+        String[] stringArray = new String [6];
         for(int i = 0; i < stringArray.length; i++) {
             stringArray[i] = s.nextLine();
+            System.out.println("Each Input: " + stringArray[i]);
         }
 
         System.out.println("\nYou have entered: ");
