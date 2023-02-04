@@ -6,7 +6,7 @@ class LoopExercise extends Exercise {
     ExType type;
     ExLevel level;
 
-    public LoopExercise() {
+    LoopExercise() {
         type = ExType.LOOP;
         level = ExLevel.EASY;
     }
