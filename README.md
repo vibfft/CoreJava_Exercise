@@ -1,3 +1,3 @@
 # CoreJava
 
-### These are basic exercises to prepare for Java coing interviews
+### These are basic exercises to prepare for Java coding interviews
