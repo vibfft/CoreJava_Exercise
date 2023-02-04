@@ -10,7 +10,7 @@ public class TimeDifferenceExercise extends Exercise {
     ExLevel level;
 
     TimeDifferenceExercise() {
-        type = ExType.LOOP;
+        type = ExType.TIME_DIFFERENCE;
         level = ExLevel.EASY;
     }
 

@@ -7,6 +7,9 @@ class Exercise {
     enum ExType {
         LOOP,
         SCANNER,
+        TENS_DIGIT,
+        TIME_DIFFERENCE,
+        IN_BETWEEN
     }
 
     enum ExLevel {

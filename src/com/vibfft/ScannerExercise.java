@@ -8,7 +8,7 @@ public class ScannerExercise extends Exercise {
     ExLevel level;
 
     ScannerExercise() {
-        type = ExType.LOOP;
+        type = ExType.SCANNER;
         level = ExLevel.EASY;
     }
 

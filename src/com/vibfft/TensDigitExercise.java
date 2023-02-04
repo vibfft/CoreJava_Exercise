@@ -12,7 +12,7 @@ public class TensDigitExercise extends Exercise {
     ExLevel level;
 
     TensDigitExercise() {
-        type = ExType.LOOP;
+        type = ExType.TENS_DIGIT;
         level = ExLevel.EASY;
     }
 
