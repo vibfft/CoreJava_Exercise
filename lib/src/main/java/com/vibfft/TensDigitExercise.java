@@ -16,7 +16,7 @@ public class TensDigitExercise extends Exercise {
         level = ExLevel.EASY;
     }
 
-    private int findTensDigit(int number) {
+    int findTensDigit(int number) {
         if ((number < 0) || (number > 1_000_000)) {
             return -1;
         } else if (number < 10) {
