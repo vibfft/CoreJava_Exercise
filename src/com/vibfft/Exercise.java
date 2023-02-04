@@ -1,3 +1,5 @@
+package com.vibfft;
+
 class Exercise {
     String programType = "Program Type";
     String programLevel = "Program Level";

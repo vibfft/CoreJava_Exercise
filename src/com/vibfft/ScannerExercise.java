@@ -1,3 +1,5 @@
+package com.vibfft;
+
 import java.util.Scanner;
 
 public class ScannerExercise extends Exercise {
