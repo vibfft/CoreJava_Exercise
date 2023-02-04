@@ -35,7 +35,12 @@ public class InBetweenExercise extends Exercise {
                 break;
             }
         }
-        boolean state = (intArray[0] >= intArray[1] || intArray[0] >= intArray[2]);
+        boolean state = false;
+        if (intArray[0] >= intArray[1]  && intArray[0] <= intArray[2]) {
+            state = true;
+        } else if (intArray[0] <= intArray[1] && intArray[0] >= intArray[2]) {
+            state = true;
+        }
         System.out.println(state);
     }
 }
