@@ -12,6 +12,7 @@ class Exercise {
         MAX_DIVISIBLE,
         SCANNER,
         SQUARE,
+        SWITCH,
         TENS_DIGIT,
         TERNARY,
         TIME_DIFFERENCE
