@@ -7,9 +7,12 @@ class Exercise {
     enum ExType {
         IN_BETWEEN,
         LEAP_YEAR,
+        LENGTH_SEQUENCE,
         LOOP,
         SCANNER,
+        SQUARE,
         TENS_DIGIT,
+        TERNARY,
         TIME_DIFFERENCE
     }
 
