@@ -5,11 +5,12 @@ class Exercise {
     String programLevel = "Program Level";
 
     enum ExType {
+        IN_BETWEEN,
+        LEAP_YEAR,
         LOOP,
         SCANNER,
         TENS_DIGIT,
-        TIME_DIFFERENCE,
-        IN_BETWEEN
+        TIME_DIFFERENCE
     }
 
     enum ExLevel {
