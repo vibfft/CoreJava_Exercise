@@ -23,7 +23,7 @@ public class InBetweenExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         InBetweenExercise o = new InBetweenExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int[] intArray = new int[3];
 
@@ -41,6 +41,6 @@ public class InBetweenExercise extends Exercise {
         } else if (intArray[0] <= intArray[1] && intArray[0] >= intArray[2]) {
             state = true;
         }
-        System.out.println(state);
+        o.println(state);
     }
 }

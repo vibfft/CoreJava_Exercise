@@ -29,7 +29,7 @@ public class LeapYearExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         LeapYearExercise o = new LeapYearExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int leapYear = s.nextInt();
         if ((leapYear >= 1900) && (leapYear <= 3000)) {

@@ -44,23 +44,23 @@ public class TimeDifferenceExercise extends Exercise {
 
         Scanner s = new Scanner(System.in);
         TimeDifferenceExercise o = new TimeDifferenceExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
-        System.out.println("The program gets the input of six integers: " +
+        o.println("The program gets the input of six integers: " +
                 "three defining the first moment of time in hours, minutes, " +
                 "seconds, and the other three defining the second one.");
-        System.out.println("Please enter six integers: ");
+        o.println("Please enter six integers: ");
 
         String[] stringArray = new String[6];
         for (int i = 0; i < stringArray.length; i++) {
             stringArray[i] = s.nextLine();
         }
 
-        System.out.println("\nYou have entered: ");
+        o.println("\nYou have entered: ");
         for (String str : stringArray) {
-            System.out.println(str);
+            o.println(str);
         }
 
-        System.out.println(o.secondDifference(stringArray));
+        o.println(o.secondDifference(stringArray));
     }
 }

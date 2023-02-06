@@ -22,7 +22,7 @@ public class LengthSequenceExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         LengthSequenceExercise o = new LengthSequenceExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int inputNumber;
         int length = 0;
@@ -31,6 +31,6 @@ public class LengthSequenceExercise extends Exercise {
             length++;
         } while (inputNumber != 0);
 
-        System.out.println(length - 1);
+        o.println(length - 1);
     }
 }

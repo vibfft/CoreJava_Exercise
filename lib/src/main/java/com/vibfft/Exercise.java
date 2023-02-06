@@ -24,7 +24,12 @@ class Exercise {
         VERY_HARD
     }
 
-    public String toString(ExType type, ExLevel level) {
+    String toString(ExType type, ExLevel level) {
         return String.format("%s: %s\n%s: %s", programType, type, programLevel, level);
+    }
+
+    @SuppressWarnings("unchecked")
+    <T> void println(T... args) {
+        System.out.println(args[0]);
     }
 }

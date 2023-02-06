@@ -24,18 +24,18 @@ public class TernaryExercise extends Exercise {
         //int z = x <= y ? x + y : x - y; equivalent to the previous statement
 
         int n = 0;
-        System.out.println(++n);
-        System.out.println(n++);
-        System.out.println(n++);
+        o.println(++n);
+        o.println(n++);
+        o.println(n++);
 
         int d = -1;
-        System.out.println(1 - d++);  // 1 - (-1)  == 2
+        o.println(1 - d++);  // 1 - (-1)  == 2
 
         int a = 4;  // 4
         int b = a++;  // 4, but a becomes 5
         int c = --a + b++;  // 4 + 4 == 8
         int result = ++a - (c++ - b) + c;  // 6 - (9 - 5) + 9
-        System.out.println(result);
+        o.println(result);
 
         int i = 5;
         do {

@@ -16,21 +16,21 @@ class LoopExercise extends Exercise {
     public static void main(String[] args) {
 
         LoopExercise o = new LoopExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int number = 12241;
         o.arithmeticExpression(number).forEach(System.out::println);
 
         for (int num : o.arithmeticExpression(number)) {
-            System.out.println(num);
+            o.println(num);
         }
 
         for (int i = 0; i < o.arithmeticExpression(number).size(); i++) {
-            System.out.println(o.arithmeticExpression(number).get(i));
+            o.println(o.arithmeticExpression(number).get(i));
         }
 
         for (Integer integer : o.arithmeticExpression(number)) {
-            System.out.println(integer);
+            o.println(integer);
         }
     }
 

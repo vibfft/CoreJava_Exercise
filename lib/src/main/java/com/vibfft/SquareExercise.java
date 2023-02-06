@@ -21,7 +21,7 @@ public class SquareExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         SquareExercise o = new SquareExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int inputNumber = s.nextInt();
         int squared = 1;

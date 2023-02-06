@@ -19,8 +19,8 @@ public class ScannerExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         ScannerExercise o = new ScannerExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
-        System.out.println(o.formulateEvaluate(s.nextInt()));
+        o.println(o.formulateEvaluate(s.nextInt()));
     }
 }

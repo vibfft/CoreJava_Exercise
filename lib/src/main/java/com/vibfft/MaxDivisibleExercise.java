@@ -25,7 +25,7 @@ public class MaxDivisibleExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         MaxDivisibleExercise o = new MaxDivisibleExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int sequenceSize = s.nextInt();
         if (sequenceSize < 1) {
@@ -35,24 +35,24 @@ public class MaxDivisibleExercise extends Exercise {
 
         int j = 0;
         int intElement;
-        System.out.println("Sequence Size: " + sequenceSize);
+        o.println("Sequence Size: " + sequenceSize);
         for (int i = 0; i < sequenceSize; i++) {
             intElement = s.nextInt();
-            System.out.println("Element: " + intElement);
+            o.println("Element: " + intElement);
             if (intElement > 30_000) {
                 throw new RuntimeException("The natural number is greater than 30000");
             } else if (intElement % 4 == 0) {
                 intElements[i] = intElement;
-                System.out.println("Divisible by 4: " + intElements[i] + " i value: " + i);
+                o.println("Divisible by 4: " + intElements[i] + " i value: " + i);
             } else {
                 intElements[i] = 0;
             }
         }
         for (int numbers: intElements) {
-            System.out.println(numbers);
+            o.println(numbers);
         }
         int max = Collections.max(Arrays.asList(intElements));
-        System.out.println(max);
+        o.println(max);
 
     }
 }

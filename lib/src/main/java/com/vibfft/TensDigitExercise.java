@@ -30,7 +30,7 @@ public class TensDigitExercise extends Exercise {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         TensDigitExercise o = new TensDigitExercise();
-        System.out.println(o.toString(o.type, o.level));
+        o.println(o.toString(o.type, o.level));
 
         int tensDigitInt = s.nextInt();
         int retValue = o.findTensDigit(tensDigitInt);
@@ -39,7 +39,7 @@ public class TensDigitExercise extends Exercise {
         } else if (retValue == -2) {
             throw new RuntimeException("Number less than 10");
         } else {
-            System.out.println(retValue);
+            o.println(retValue);
         }
     }
 }
