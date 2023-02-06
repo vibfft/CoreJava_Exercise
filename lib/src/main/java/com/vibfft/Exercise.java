@@ -9,6 +9,7 @@ class Exercise {
         LEAP_YEAR,
         LENGTH_SEQUENCE,
         LOOP,
+        MAX_DIVISIBLE,
         SCANNER,
         SQUARE,
         TENS_DIGIT,
