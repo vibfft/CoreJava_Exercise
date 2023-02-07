@@ -5,12 +5,13 @@ class Exercise {
     String programLevel = "Program Level";
 
     enum ExType {
+        FUNCTIONAL_DECOMPOSITION,
         IN_BETWEEN,
+        ITER_FACTORIAL,
         LEAP_YEAR,
         LENGTH_SEQUENCE,
         LOOP,
         MAX_DIVISIBLE,
-        ITER_FACTORIAL,
         SCANNER,
         SQUARE,
         SWITCH,
