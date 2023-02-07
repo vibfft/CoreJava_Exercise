@@ -10,6 +10,7 @@ class Exercise {
         LENGTH_SEQUENCE,
         LOOP,
         MAX_DIVISIBLE,
+        ITER_FACTORIAL,
         SCANNER,
         SQUARE,
         SWITCH,
