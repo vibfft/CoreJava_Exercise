@@ -1,10 +1,10 @@
 package com.test;
 
-public class MoreTricyProblem {
+public class MoreTrickyProblem {
 
 }
 
-class Aa extends MoreTricyProblem {
+class Aa extends MoreTrickyProblem {
     protected int n = 10;
 }
 
