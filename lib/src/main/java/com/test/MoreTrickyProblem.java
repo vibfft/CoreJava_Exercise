@@ -15,6 +15,10 @@ class Bb extends Aa {
         super();
         System.out.println("Bb: " + n);
     }
+
+    public Bb(int a, int i) {
+
+    }
 }
 
 class Cc extends Bb {
