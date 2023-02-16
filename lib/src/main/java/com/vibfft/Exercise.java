@@ -31,7 +31,7 @@ class Exercise {
         return String.format("%s: %s\n%s: %s", programType, type, programLevel, level);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings(value = {"unchecked"})
     <T> void println(T... args) {
         System.out.println(args[0]);
     }
