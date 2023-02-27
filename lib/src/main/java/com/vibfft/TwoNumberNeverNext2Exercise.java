@@ -1,6 +1,5 @@
 package com.vibfft;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoNumberNeverNext2Exercise extends Exercise {
@@ -10,7 +9,7 @@ public class TwoNumberNeverNext2Exercise extends Exercise {
 
     TwoNumberNeverNext2Exercise() {
         type = ExType.SCANNER;
-        level = ExLevel.EASY;
+        level = ExLevel.MEDIUM;
     }
 
     String buildString(int[] arrayElements) {
