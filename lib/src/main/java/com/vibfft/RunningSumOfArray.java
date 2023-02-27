@@ -31,12 +31,7 @@ class SolutionTwo extends RunningSumOfArray {
     }
 
     public static void main(String[] args) {
-        SolutionTwo sol = new SolutionTwo();
-        int[] nums = new int[]{3, 1, 2, 10, 1};
-
-        for (int num : sol.runningSum(nums)) {
-            System.out.print(num + ", ");
-        }
-        System.out.println();
+        SolutionThree s = new SolutionThree();
+        int[][] accounts = new int[][]{{2,8,7},{7,1,3},{1,9,5}};
     }
 }

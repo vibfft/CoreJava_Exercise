@@ -1,0 +1,58 @@
+1. Why Java is not 100% object-oriented?
+    a. there are 8 types of primitive types.  to make them object oriented, we have wrapper classes
+2. Why pointers are not used in Java?
+    a. they are unsafe.
+    b. JVM is responsible for implicit memory allocation, avoid the direct access to memory by the user, pointers are discouraged in Java
+
+3. What is JIT compiler in Java?
+    a. Java source code => JDK (javac) => Byte Codes => JRE (Interpreter + JIT Compiler) => Machine Codes
+
+4. Why String is immutable in Java?
+    a. String pool requires string to be immutable otherwise shared reference can be changed from anywhere.
+    b. security, having immutable string allows you to be secure and safe because no one can change reference of string once it gets created.
+
+5. What is a market interface?
+    a. the interface having no data member and member functions, an empty interface.
+    b. e.g. Serializable, Cloneable
+
+6. Can you override a private or static method in Java?
+    a. you cannot override a private or static method in Java.
+    b. private method is not accessible in the subclass.  you have to create another private class wih the same name in the child class
+    c. for static methods, if you create a similar method with same return type and same method arguments in child class then it will hide
+    the superclass method the superclass method, this is known as method hiding.
+
+7. Does "finally" always execute in Java?
+    a. Not in following cases, System.exit() and system crash
+
+8. What methods does the object class have?
+    a. clone object
+    b. equals method
+    c. finalize
+    d. getClass
+    e. hashCode
+    f. toString
+
+9. How can you make a class immutable?
+    a. declare the class final so it can't be extended
+    b. make all fields private so that direct access is not allowed.
+    c. don't provide setter methods
+    d. make all mutable fields final, so that its value is only assigned once
+    e. initialize all the fields via a constructor performing a deep copy
+    f. clone object and do not return the actual object reference
+
+10. What is singleton class in Java and how can we make a class singleton?
+    a. Singleton class is a class whose only one instance can be created at any given time, in one JVM.
+    b. public class Animal {
+        private static Animal single_instance = null;
+
+        private Animal() {}
+
+        public static Animal getInstance() {
+            if (single_instance == null) 
+                single_instance = new Animal();
+
+            return single_instance;
+        }
+    }
+
+
