@@ -1,6 +1,16 @@
 import sys, mysql.connector
 from collections import namedtuple
 
+# Suppose you need to create a database for all the movies and their reviews (like IMDB).
+# In this database, the movies table contains some information about the movies (id: INT, title: VARCHAR(40)), 
+# and the reviews table contains anonymous movie reviews: reviews (movie_id: INT, score: INT, feedback: VARCHAR(1000)). 
+# The score is a value from 1 to 10.
+
+# Write a query that returns pairs of movie names and scores (title, score) for all the movies that have at least one review. 
+# The result should be ordered alphabetically by the names, and the scores should be in ascending order.
+
+# select movies.title, reviews.score from movies inner join reviews on movies.id = reviews.movie_id order by movies.title, reviews.score
+
 # install the connector by running: python3 -m pip install mysql-connector-python
 class Characters():
 
@@ -24,6 +34,16 @@ class Characters():
                         "author varchar(30) not null," + \
                         "primary key (universe_id));"
     
+    MOVIES_TABLE = "create table movies (" + \
+                        "id int not null auto_increment," + \
+                        "title varchar(40) not null," + \
+                        "primary key (id));"
+    
+    REVIEWS_TABLE = "create table reviews (" + \
+                        "movie_id int not null," + \
+                        "score int not null," + \
+                        "feedback varchar(100) not null);"
+    
     table_hash = {'characters.csv':CHARACTERS_TABLE, 'pets.csv':PETS_TABLE, 'universe.csv':UNIVERSE_TABLE}
     def __init__(self, host: str, user: str, password: str, database: str) -> None:
         self.host = host
@@ -38,7 +58,7 @@ class Characters():
             database=self.database
         )
 
-    def create_tables(self, file_name, c_cursor):
+    def create_tables(self, file_name: str, c_cursor):
         try:
             c_cursor.execute(Characters.table_hash[file_name])
             self.db.commit()
