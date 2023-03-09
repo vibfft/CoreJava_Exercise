@@ -35,18 +35,18 @@ public class SwitchExercise extends Exercise {
             }
         }
 
-        String action = operator;
-        if (operator.equals("/") && (secondOperand == 0)) {
-            o.println("Divide by zero!");
-        } else {
-            switch (action) {
-                case "+" -> System.out.println(firstOperand + secondOperand);
-                case "-" -> System.out.println(firstOperand - secondOperand);
-                case "/" -> System.out.println(firstOperand / secondOperand);
-                case "*" -> System.out.println(firstOperand * secondOperand);
-                default -> System.out.println("Unknown operator!");
-            }
-        }
+//        String action = operator;
+//        if (operator.equals("/") && (secondOperand == 0)) {
+//            o.println("Divide by zero!");
+//        } else {
+//            switch (action) {
+//                case "+" -> System.out.println(firstOperand + secondOperand);
+//                case "-" -> System.out.println(firstOperand - secondOperand);
+//                case "/" -> System.out.println(firstOperand / secondOperand);
+//                case "*" -> System.out.println(firstOperand * secondOperand);
+//                default -> System.out.println("Unknown operator!");
+//            }
+//        }
     }
 }
 
