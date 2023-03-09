@@ -38,7 +38,7 @@ final class User extends UserRecordExercise{
             return true;
         if (obj == null || obj.getClass() != this.getClass())
             return false;
-        var that = (User) obj;
+        User that = (User) obj;
         return Objects.equals(this.username, that.username) &&
                 Objects.equals(this.password, that.password);
     }
