@@ -16,21 +16,19 @@ public class CinemaRoomManager extends Exercise {
         level = ExLevel.EASY;
     }
 
-    void cinemaGrid() {
+    void displayCinemaGrid() {
 
         String seat = "S";
-        for (int i = 0; i < numOfRows; i++) {
-            for (int j = 0; j < numOfColumns; j++) {
+        for (int i = 0; i < this.numOfRows; i++) {
+            for (int j = 0; j < this.numOfColumns; j++) {
                 if (i == 0 && j == 0) {
                     System.out.print(" ");
-                } else if (i == 0  && j > 0) {
-                    System.out.print(String.format("%s",String.valueOf(j)));
-                } else if (i > 0 && j == 0) {
-                    System.out.print(String.format("%s",String.valueOf(i)));
-                } else if (i == 0 && j == numOfColumns) {
-                    System.out.println();
+                } else if (i == 0) {
+                    System.out.printf(" %s",j);
+                } else if (j == 0) {
+                    System.out.print(i);
                 } else {
-                    System.out.print(String.format(" %s", seat));
+                    System.out.printf(" %s",seat);
                 }
             }
             System.out.println();
@@ -49,6 +47,8 @@ public class CinemaRoomManager extends Exercise {
         // when number of rows are odd, first half rows == Math.floorDiv(rows, 2)
         // second half rows == Math.Ceil
         int totalCost = 0;
+        this.numOfRows = rows;
+        this.numOfColumns = cols;
         int numSeats = rows * cols;
 
         if (numSeats <= 60) {
@@ -65,16 +65,17 @@ public class CinemaRoomManager extends Exercise {
 
     public static void main(String[] args) {
         CinemaRoomManager c = new CinemaRoomManager();
-        System.out.println("Cinema:");
-        c.cinemaGrid();
-
         Scanner s = new Scanner(System.in);
 
         System.out.println("Enter the number of rows:");
         int rows = s.nextInt();
         System.out.println("Enter the number of seats in each row:");
         int cols = s.nextInt();
+
         System.out.println("Total income:");
-        System.out.println(String.format("$%s", c.calculateSeatCosts(rows, cols)));
+        System.out.printf("$%s%n", c.calculateSeatCosts(rows, cols));
+        System.out.println("Cinema:");
+        c.displayCinemaGrid();
+
     }
 }
